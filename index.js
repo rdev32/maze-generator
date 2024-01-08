@@ -6,12 +6,7 @@ class MapGenerator {
   }
 
   generateMap() {
-    const map = Array.from({ length: this.rows }, () => Array(this.cols).fill(' '))
-    for (let i = 0; i < map.length; i++) {
-      for (let j = 0; j < map[i].length; j++) {
-        map[i][j] = '#'
-      }
-    }
+    const map = Array.from({ length: this.rows }, () => Array(this.cols).fill('#'))
 
     const startRow = Math.floor(Math.random() * this.rows)
     const startCol = 0
